@@ -33,9 +33,12 @@ export default function TripPage() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get(`http://localhost:5000/api/trip/${id}`, {
-          headers: { Authorization: token },
-        });
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/trip/${id}`,
+          {
+            headers: { Authorization: token },
+          },
+        );
 
         setTrip(res.data);
       } catch {
@@ -76,7 +79,7 @@ export default function TripPage() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/trip/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/trip/${id}`,
         { itinerary: trip.itinerary },
         { headers: { Authorization: token } },
       );
@@ -93,7 +96,7 @@ export default function TripPage() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        `http://localhost:5000/api/trip/regenerate/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/trip/regenerate/${id}`,
         { day, destination: trip.destination },
         { headers: { Authorization: token } },
       );
@@ -164,7 +167,7 @@ export default function TripPage() {
         <div className="flex gap-3">
           <button
             onClick={saveTrip}
-            className="px-4 py-2 rounded bg-blue-500 text-white dark:bg-green-500"
+            className="px-4 py-2 rounded  text-white dark:bg-green-500"
           >
             Save 💾
           </button>
@@ -205,7 +208,7 @@ export default function TripPage() {
 
               <button
                 onClick={() => regenerateDay(day.day)}
-                className="px-3 py-1 rounded bg-blue-500 text-white dark:bg-green-500"
+                className="px-3 py-1 rounded  text-white dark:bg-green-500"
               >
                 🔄 Regenerate
               </button>
@@ -225,7 +228,7 @@ export default function TripPage() {
 
                   <button
                     onClick={() => removeActivity(dIndex, i)}
-                    className="px-3 py-1 rounded bg-blue-500 text-white dark:bg-green-500"
+                    className="px-3 py-1 rounded  text-white dark:bg-green-500"
                   >
                     ✕
                   </button>
@@ -235,7 +238,7 @@ export default function TripPage() {
 
             <button
               onClick={() => addActivity(dIndex)}
-              className="px-3 py-1 rounded bg-blue-500 text-white dark:bg-green-500"
+              className="px-3 py-1 rounded  text-white dark:bg-green-500"
             >
               + Add Activity
             </button>

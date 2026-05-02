@@ -26,10 +26,10 @@ export default function ProfilePage() {
     const fetchData = async () => {
       try {
         const [tripRes, savedRes] = await Promise.all([
-          axios.get("http://localhost:5000/api/trip", {
+          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/trip`, {
             headers: { Authorization: token },
           }),
-          axios.get("http://localhost:5000/api/trip/saved", {
+          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/trip/saved`, {
             headers: { Authorization: token },
           }),
         ]);

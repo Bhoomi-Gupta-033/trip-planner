@@ -15,9 +15,12 @@ export default function MyTripsPage() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get("http://localhost:5000/api/trip", {
-          headers: { Authorization: token },
-        });
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/trip`,
+          {
+            headers: { Authorization: token },
+          },
+        );
 
         setTrips(res.data);
         setLoading(false);
@@ -35,7 +38,7 @@ export default function MyTripsPage() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        `http://localhost:5000/api/trip/save/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/trip/save/${id}`,
         {},
         { headers: { Authorization: token } },
       );
@@ -63,7 +66,7 @@ export default function MyTripsPage() {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:5000/api/trip/${id}`, {
+      await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/trip/${id}`, {
         headers: { Authorization: token },
       });
 
