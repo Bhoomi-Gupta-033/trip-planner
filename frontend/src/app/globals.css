@@ -55,8 +55,8 @@ html, body {
     BUTTON
 ========================= */
 .btn-primary {
-  background: var(--primary);
-  color: emerald-green-500;
+  background: emerald-green-500;
+  color: white;
   border-radius: 12px;
   padding: 10px 18px;
   transition: all 0.3s ease;
