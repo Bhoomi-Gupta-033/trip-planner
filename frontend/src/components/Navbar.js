@@ -71,7 +71,7 @@ export default function Navbar() {
       {/* RIGHT */}
       <div className="flex items-center gap-4">
         {/* THEME */}
-        {/* <button
+        <button
           onClick={(e) => {
             e.stopPropagation();
             toggleTheme();
@@ -79,7 +79,7 @@ export default function Navbar() {
           className="px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-800"
         >
           {theme === "dark" ? "☀️" : "🌙"}
-        </button> */}
+        </button>
 
         {/* USER */}
         {user ? (
