@@ -13,7 +13,7 @@ html.dark {
   --bg: #ffffff;
   --text: #0f172a;
   --card: #ffffff;
-  --primary: #ffffff;
+  --primary: #1caa3f;
   --primary-hover: #2563eb;
   --border: #e2e8f0;
 }
@@ -22,7 +22,7 @@ html.dark {
   --bg: #020617;
   --text: #e2e8f0;
   --card: #0f172a;
-  --primary: #ffffff;
+  --primary: #1caa3f;;
   --primary-hover: #059669;
   --border: #1e293b;
 }
