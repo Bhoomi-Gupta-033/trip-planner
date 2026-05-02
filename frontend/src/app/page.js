@@ -193,7 +193,7 @@ export default function Home() {
               href="/dashboard"
               className="
             mt-10 inline-block px-10 py-4 rounded-xl font-semibold
-            bg-blue-500 hover:bg-blue-600
+            hover:bg-blue-600
             dark:bg-emerald-500 dark:hover:bg-emerald-600
             text-white
             shadow-lg hover:shadow-xl

@@ -141,14 +141,14 @@ export default function Navbar() {
           <div className="flex gap-3">
             <button
               onClick={() => router.push("/login")}
-              className="btn-primary"
+              className="text-center text-sm text-gray-500 dark:text-gray-400"
             >
               Login
             </button>
 
             <button
               onClick={() => router.push("/register")}
-              className="btn-primary"
+              className="text-center text-sm text-gray-500 dark:text-gray-400"
             >
               Register
             </button>

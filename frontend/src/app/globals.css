@@ -20,7 +20,7 @@ html.dark {
 
 .dark {
   --bg: #020617;
-  --text: #e2e8f0;
+  --text: #ffffff;
   --card: #0f172a;
   --primary: #1caa3f;;
   --primary-hover: #059669;
@@ -55,7 +55,7 @@ html, body {
     BUTTON
 ========================= */
 .btn-primary {
-  background: emerald-green-500;
+  background: #1caa3f ;
   color: white;
   border-radius: 12px;
   padding: 10px 18px;
