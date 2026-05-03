@@ -394,9 +394,8 @@ export default function Home() {
               key={i}
               className="
   p-6 rounded-2xl shadow-lg
-  bg-white dark:bg-[#0f172a]/70
-  dark:backdrop-blur-md
-  border border-gray-200 dark:border-gray-800
+  bg-[var(--card)]
+  border border-[var(--border)]
   hover:scale-105
   hover:shadow-blue-200
   dark:hover:shadow-green-500/20
@@ -462,7 +461,7 @@ export default function Home() {
               href="/login"
               className="
             mt-10 inline-block px-10 py-4 rounded-xl font-semibold
-            bg-white hover:bg-white/90
+            bg-emerald-500 hover:bg-emerald-600
             dark:bg-emerald-500 dark:hover:bg-emerald-600
             text-white
             shadow-lg hover:shadow-xl
