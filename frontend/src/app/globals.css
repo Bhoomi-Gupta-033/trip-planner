@@ -1,11 +1,5 @@
 @import "tailwindcss";
-html {
-  background: #ffffff;
-}
 
-html.dark {
-  background: #020617;
-}
 /* =========================
     THEME VARIABLES
 ========================= */
@@ -33,7 +27,8 @@ html.dark {
 html, body {
   background: var(--bg);
   color: var(--text);
-  transition: all 0.3s ease;
+  /* transition sirf theme change pe, initial load pe nahi */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* =========================
