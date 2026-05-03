@@ -296,14 +296,14 @@ export default function Navbar() {
           <div className="flex gap-3">
             <button
               onClick={() => router.push("/login")}
-              className="w-full py-3 rounded-lg font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:scale-105 transition-transform"
+              className="w-full py-3 text-sm rounded-lg font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:scale-105 transition-transform"
             >
               Login
             </button>
 
             <button
               onClick={() => router.push("/register")}
-              className="w-full py-3 rounded-lg font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:scale-105 transition-transform"
+              className="w-full py-3 text-sm rounded-lg font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:scale-105 transition-transform"
             >
               Register
             </button>
