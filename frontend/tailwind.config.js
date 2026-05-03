@@ -9,8 +9,8 @@
 
 // /** @type {import('tailwindcss').Config} */
 // module.exports = {
-//   darkMode: "class", // ✅ THIS IS MUST
-//   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+//   darkMode: "class",
+//   content: ["./src/**/*.{js,ts,jsx,tsx}"],
 //   theme: {
 //     extend: {},
 //   },
@@ -19,7 +19,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  // Tailwind v4 mein darkMode yahan nahi, globals.css mein @variant se hota hai
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
