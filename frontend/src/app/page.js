@@ -46,8 +46,7 @@ export default function Home() {
       <div
         className="
         fixed inset-0
-        bg-gradient-to-br
-        from-blue-100/60 via-transparent to-blue-200/40
+       
         dark:from-green-900/40 dark:to-green-700/20
         pointer-events-none
       "
@@ -61,9 +60,7 @@ export default function Home() {
             Plan Your Dream Trip with{" "}
             <span
               className="
-            bg-gradient-to-r 
-            from-blue-500 to-blue-700 
-            dark:from-green-400 dark:to-emerald-500
+           
             bg-clip-text text-transparent
             animate-pulse
             "
