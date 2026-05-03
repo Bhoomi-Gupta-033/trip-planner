@@ -419,9 +419,12 @@ export default function ProfilePage() {
                       <span>🗓️ {trip.days} days</span>
                       <span>💰 {trip.budget}</span>
                     </div>
-                    <p className="text-emerald-500 text-sm mt-3 font-medium group-hover:underline">
+                    <a
+                      href={`/trip/${trip._id}`}
+                      className="text-emerald-500 text-sm mt-3 font-medium group-hover:underline"
+                    >
                       View Details →
-                    </p>
+                    </a>
                   </div>
                 </a>
               ))}
